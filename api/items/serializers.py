@@ -8,6 +8,12 @@ class ItemSerializer(serializers.ModelSerializer):
         model = Item
         fields = ("id", "name", "description", "price", "created_at", "updated_at")
 
+    def create(self, validated_data):
+        pass
+
+    def update(self, instance, validated_data):
+        pass
+
 
 class ItemFormSerializer(serializers.Serializer):
     name = serializers.CharField(

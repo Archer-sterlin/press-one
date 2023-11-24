@@ -12,3 +12,6 @@ class Item(models.Model):
 
     def __str__(self) -> str:
         return f"{self.id} - {self.name}"
+
+    # class Meta:
+    #     app_label = 'items'
